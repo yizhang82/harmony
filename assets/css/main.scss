@@ -114,6 +114,13 @@ h6 {
   }
 }
 
+small {
+  font-size: 70%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
+
 p {
   line-height: 1.6;
   @include font-size(14px);
@@ -194,7 +201,7 @@ header.main-header, footer.main-footer {
 
 header.main-header {
   color: $base-00;
-  border-top: 5px $base-00 solid;
+  border-bottom: 1px solid #eee;
 
   h1, h2 { text-align: center; color: inherit;}
   a { 
@@ -501,8 +508,7 @@ body.theme-base-01 {
 --------------------------------- */
 
 header.main-header { 
-  padding: 1em 0;
-  @include MQ(M) { padding: 2em 0; }
+  padding: 0.5em 0;
 }
 footer.main-footer {
   padding: 1em 0;
@@ -560,7 +566,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: $color-white;
+  background-color: #f9f9f9;
   border: 1px solid $base-05;
   code {
     padding: 0;
